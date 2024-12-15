@@ -2,8 +2,8 @@ import { Link } from "react-router-dom"
 
 function Footer() {
   return (
-    <div className="sm:text-center bg-slate-300 mt-20">
-      <div className="flex justify-between flex-wrap mx-8 mt-5">
+    <div className="sm:text-center bg-slate-300">
+      <div className="flex justify-between flex-wrap mx-8 ">
         <div className="py-3">
           <h3 className="text-xl font-medium m-1">Give us Feedback!</h3>
           <form >

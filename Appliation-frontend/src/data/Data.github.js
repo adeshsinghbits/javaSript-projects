@@ -8,13 +8,11 @@ export const datafromgithub = async () => {
     data = data.map((item) => item.name);
     return data;
 }
-export const imagefromgithub = async () => {
-    const repo_url = "https://api.github.com/repos/adeshsinghbits/javaSript-projects/contents/images?ref=main"
-    let repoContent = await fetch(repo_url).then((res) => res.json());
-    console.log(repo_url);
+
+export const profilegithub = async () => {
+    const profile_url = "https://api.github.com/users/adeshsinghbits"
+    let profile = await fetch(profile_url).then((res) => res.json())    
+    console.log(profile.name);
     
-    let data =repoContent.map((item) => item.name);
-    console.log(data);
-    
-    return data;
+    return profile;
 }
