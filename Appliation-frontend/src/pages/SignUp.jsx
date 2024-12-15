@@ -32,7 +32,7 @@ const SignUp = () => {
                 />
               ) : (
                 <div className="flex justify-center items-center h-full text-gray-400">
-                  Upload
+                  ProfileImage
                 </div>
               )}
             </div>
@@ -46,44 +46,47 @@ const SignUp = () => {
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="username" className="text-gray-700">
+          <label htmlFor="username" className="text-white text-xl font-medium">
             Username
           </label>
           <input
             type="text"
             id="username"
             name="username"
-            className="border border-gray-300 rounded p-2 mt-1"
+            placeholder="Enter Username"
+            className="border border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
             required
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="email" className="text-gray-700">
+          <label htmlFor="email" className="text-white text-xl font-medium">
             Email
           </label>
           <input
             type="email"
             id="email"
             name="email"
-            className="border border-gray-300 rounded p-2 mt-1"
+            placeholder="Enter Email"
+            className="border border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
             required
           />
         </div>
         <div className="flex flex-col">
-          <label htmlFor="password" className="text-gray-700">
+          <label htmlFor="password" className="text-white text-xl font-medium">
             Password
           </label>
           <input
             type="password"
             id="password"
             name="password"
-            className="border border-gray-300 rounded p-2 mt-1"
+            placeholder="Enter Strong Password"
+            className="border border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
             required
           />
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded mt-4 hover:bg-blue-600"
+          className="w-full border-gray-300 border text-gray-300 p-2 mt-5 rounded-3xl hover:bg-blue-600"
         >
           Sign Up
         </button>
