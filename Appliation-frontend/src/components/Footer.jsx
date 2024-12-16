@@ -10,10 +10,10 @@ function Footer() {
             <label htmlFor="comment" className="text-md m-1">Leave a beautiful Comment</label>
             <input type="text"
               placeholder="Comment me"
-              className="block m-1"/>
+              className="block px-2 py-1 outline-none m-1"/>
               <input type="submit" 
                 value="Submit"
-                className="bg-red-700 m-1 px-4 py-1 text-white outline-none"
+                className="bg-red-700  m-1 px-4 py-1 text-white outline-none"
                 />
           </form>
         </div>

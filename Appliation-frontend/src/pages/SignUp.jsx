@@ -42,6 +42,7 @@ const SignUp = () => {
             type="file"
             accept="image/*"
             className="hidden"
+            autoComplete="off"
             onChange={handleAvatarChange}
           />
         </div>
@@ -53,8 +54,9 @@ const SignUp = () => {
             type="text"
             id="username"
             name="username"
+            autoComplete="off"
             placeholder="Enter Username"
-            className="border border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
+            className="border outline-none border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
             required
           />
         </div>
@@ -66,8 +68,9 @@ const SignUp = () => {
             type="email"
             id="email"
             name="email"
+            autoComplete="off"
             placeholder="Enter Email"
-            className="border border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
+            className="border outline-none border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
             required
           />
         </div>
@@ -79,8 +82,9 @@ const SignUp = () => {
             type="password"
             id="password"
             name="password"
+            autoComplete="off"
             placeholder="Enter Strong Password"
-            className="border border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
+            className="border outline-none border-gray-300 bg-transparent rounded-3xl p-2 mt-1"
             required
           />
         </div>
