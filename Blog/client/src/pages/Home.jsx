@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 import { AuthContext } from '../context/authcontext';
 import { useContext } from 'react';
 function Home() {
-    const {user} = useContext(AuthContext)
+    const {loggedinUser} = useContext(AuthContext)
   return (
   <div className="bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500 text-white py-16">
             <div className="container mx-auto text-center">
@@ -11,10 +11,10 @@ function Home() {
                     Explore the latest articles, insights, and stories from around the world.
                 </p>
                 <button className="mt-8 text-white font-semibold py-2 px-6 rounded-full shadow-lg  transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-blue-400 duration-300 ">
-                        {user &&
-                            <p>Hello {user}</p>
+                        {loggedinUser &&
+                            <p>Hello {loggedinUser}</p>
                         }
-                        {!user &&
+                        {!loggedinUser &&
                             <Link to="/signUp"> Sign Up</Link>
                         }
                 </button>

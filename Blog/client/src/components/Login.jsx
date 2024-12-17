@@ -4,7 +4,7 @@ import { AuthContext } from '../context/authcontext';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-    const {setUser } = useContext(AuthContext);
+    const {setLoggedinUser } = useContext(AuthContext);
     const [formData, setFormData] = useState({ email: '', password: '' });
     const navigate = useNavigate()
     const handleChange = (e) => {
@@ -18,10 +18,11 @@ const Login = () => {
             const response = await axios.post('http://localhost:3001/login', formData);
             alert(response.data.message);
             localStorage.setItem('token', response.data.token)
-            await setUser(response.data.name)
+            await setLoggedinUser(response.data.name)
             navigate("/")
         } catch (error) {
-            alert(error.response?.data.message || 'Error: Unable to login');
+            console.log(error);
+            
         }
     };
 

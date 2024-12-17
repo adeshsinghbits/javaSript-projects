@@ -5,7 +5,7 @@ function SearchById() {
     const [searchId, setSearchId] = useState('');
     const [result, setResult] = useState(null);
     const [error, setError] = useState(null);
-    const {user} = useContext(AuthContext)
+    const {loggedinUser} = useContext(AuthContext)
   const handleSearch = async () => {
       try {
         const response = await axios.get(`http://localhost:3001/search/${searchId}`);
@@ -77,7 +77,7 @@ function SearchById() {
                 <h2 className="text-gray-900 font-bold text-2xl tracking-tight mb-2">{data.title}</h2>
                 <p className="font-normal text-gray-700 mb-3 text-justify">{data.content}</p>
                 <p className="text-white bg-blue-700 hover:bg-blue-800 shadow-lg font-medium rounded-lg text-md px-7 py-2 inline-flex text-right mr-10 ">{data.author}</p>
-              {data.author === user && (
+              {data.author === loggedinUser && (
                   <button onClick={() => deletePost(data.id)}
                   className='ml-40 text-black bg-red-400 hover:bg-red-600 font-medium rounded-lg text-md px-3 py-2 shadow-lg'
                   >Delete</button>

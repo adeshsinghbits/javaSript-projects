@@ -8,7 +8,7 @@ export const AuthContext = createContext();
 // Create a provider component
 export const UserProvider = ( {children} ) => {
   const [loggedinUser, setLoggedinUser] = useState(
-    localStorage.getItem("user")
+    localStorage.getItem("loggedinUser")
     ); 
   useEffect(() => {
     if (loggedinUser) {

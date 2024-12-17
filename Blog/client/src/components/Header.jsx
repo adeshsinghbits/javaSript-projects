@@ -2,13 +2,13 @@ import  { useState, useContext} from 'react';
 import {NavLink, Link} from "react-router-dom"
 import { AuthContext } from '../context/authcontext';
 const Header = () => {
-    const { user , setUser} = useContext(AuthContext);
+    const { loggedinUser, setLoggedinUser} = useContext(AuthContext);
     const [isOpen, setIsOpen] = useState(false);
-    console.log(user);
+    console.log(loggedinUser);
     const handleLogout = () => {
         // Clear token from localStorage and update state
         localStorage.removeItem("token");
-        setUser(null)
+        setLoggedinUser(null)
     };
     
 
@@ -34,16 +34,16 @@ const Header = () => {
 
                 {/* Desktop Menu Items */}
                 <div className="hidden md:flex items-center space-x-4">
-                    { !user && (
+                    { !loggedinUser && (
                 <div>
                     <Link to="/login" className="text-white hover:bg-blue-700 px-4 py-2 rounded">Login</Link>
                     <Link to="/signup" className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-200">Sign Up</Link>
                 </div>
                     )
                 }
-                    {user && (
+                    {loggedinUser && (
                 <div className="hidden md:flex items-center space-x-4">
-                    <p className="text-black bg-green-300 hover:bg-green-700 px-4 py-2 rounded">{user}</p>
+                    <p className="text-black bg-green-300 hover:bg-green-700 px-4 py-2 rounded">{loggedinUser}</p>
                     <button onClick={handleLogout} className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-400">Logout</button>
                 </div>
             )}

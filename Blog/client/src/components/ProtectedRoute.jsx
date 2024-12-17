@@ -3,8 +3,8 @@ import CreatePost from "./CreatePost";
 import { useContext } from "react";
 import { AuthContext } from "../context/authcontext";
 const ProtectedRoute = () => {
-    const {user} = useContext(AuthContext)
-    return user ? <CreatePost/> : <Navigate to={"/login"}/>;
+    const {loggedinUser} = useContext(AuthContext)
+    return loggedinUser ? <CreatePost/> : <Navigate to={"/login"}/>;
 }
 
 

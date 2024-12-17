@@ -5,11 +5,11 @@ import axios from "axios";
 import { AuthContext } from "../context/authcontext";
 const CreatePost = () => {
 
-    const { user } = useContext(AuthContext)
+    const { loggedinUser } = useContext(AuthContext)
     const [post, setPost] = useState({
         title: "",
         content: "",
-        author: user
+        author: loggedinUser
     });
     const navigate = useNavigate();
 
@@ -58,7 +58,7 @@ const CreatePost = () => {
                             <input
                                 type="text"
                                 name="author"
-                                value={user}
+                                value={loggedinUser}
                                 // onChange={handleChange}
                                 readOnly
                                 required
