@@ -21,26 +21,32 @@
             ><i class="fa-solid fa-clipboard"></i></i></button>
         </div>
         <div class="card2">
-            <input type="range"
-            min="1";
-            value="8";
-            max="20";
-            id="length"
-                onchange="generatePassword()" 
-                id="length">
-            <label for="length" id="lengthslide">Length: 8</label>
-            <input type="checkbox"
+            <div>
+                <input type="range"
+                    min="1";
+                    value="8";
+                    max="20";
+                    id="length"
+                    onchange="generatePassword()" 
+                    id="length">
+                <label for="length" id="lengthslide">Length: 8</label>
+            </div>
+            <div>
+                <input type="checkbox"
                 id="numbercheckbox" 
                 onclick="checkCheckbox()"
                 onchange="generatePassword()"  
             >
             <label for="numbercheckbox">Number</label>
-            <input type="checkbox" 
+            </div>
+            <div>
+                <input type="checkbox" 
                 id="charcatercheckbox"
                 onclick="checkCheckbox()"
                 onchange="generatePassword()"  
             >
             <label for="charcatercheckbox">charcater</label>
+            </div>
         </div>
         <p class="copy"></p>
     </div>
