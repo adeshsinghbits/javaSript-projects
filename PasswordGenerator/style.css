@@ -1,0 +1,90 @@
+body{
+    margin: 0%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    height: 100vh; 
+    background-image: linear-gradient(to bottom right, rgb(171, 171, 255), rgb(60, 60, 246), rgb(0, 0, 255));
+}
+.card-box{
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    background-color: #8888;
+    padding: 5px 20px;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 255, 0.5);
+}
+.card1{
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+.card1 input{
+    flex-shrink: 0;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.card1 button{
+    outline: none;
+    border: none;
+    font-weight: bolder;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 5px 10px 5px;
+    margin-left: 5px;
+    border-radius: 10px;
+    
+}
+.card1 button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.card2{
+    margin-top:50px;
+    font-size: 20px;
+    gap: 10px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+#length {
+    -webkit-appearance: none; 
+    width: 150px; 
+    height: 10px; 
+    margin-top: 5px;
+    background: #ddd; 
+    border-radius: 5px; 
+    outline: none; 
+}
+#length::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%;
+    background: #000; 
+    cursor: pointer; 
+}
+
+
+#length:hover::-moz-range-thumb {
+    background: #45a049; 
+}
+.card2 input{
+    height: 20px;
+    width: 20px;
+}
+.card2 label{
+    overflow: hidden;
+    font-family: 20px;
+}
+

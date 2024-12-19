@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+   <div class="container">
+    <div class="card-box">
+        <h2>PASSWORD GENERATOR</h2>
+        <div class="card1">
+            <input type="text"
+            id="result"
+            readonly>
+            <button
+            id="copyButton"
+            onclick="copyPass()"
+            ><i class="fa-solid fa-clipboard"></i></i></button>
+        </div>
+        <div class="card2">
+            <input type="range"
+            min="1";
+            value="8";
+            max="20";
+            id="length"
+                onchange="generatePassword()" 
+                id="length">
+            <label for="length" id="lengthslide">Length: 8</label>
+            <input type="checkbox"
+                id="numbercheckbox" 
+                onclick="checkCheckbox()"
+                onchange="generatePassword()"  
+            >
+            <label for="numbercheckbox">Number</label>
+            <input type="checkbox" 
+                id="charcatercheckbox"
+                onclick="checkCheckbox()"
+                onchange="generatePassword()"  
+            >
+            <label for="charcatercheckbox">charcater</label>
+        </div>
+        <p class="copy"></p>
+    </div>
+   </div>
+    <!--script-->
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/42c69909dd.js" crossorigin="anonymous"></script>
+</body>
+</html>
