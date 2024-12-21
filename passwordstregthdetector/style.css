@@ -43,3 +43,9 @@ form{
     height: 30px;
     margin: 20px 0px 0px;
 }
+.bar{
+    max-width: 100%;
+    width: 0px;
+    height: 20px;
+    border-radius: 10px;
+}
