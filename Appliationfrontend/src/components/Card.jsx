@@ -8,7 +8,7 @@ function Card({ projectName, altname, projecImage }) {
                 <img
                     src={projecImage}
                     alt={altname}
-                    className="rounded-t-xl h-52"
+                    className="rounded-t-xl h-52 w-64"
                 />
             <div className="glass py-4 px-5 relative -top-[3.4rem] bg-slate-300  rounded-b-xl z-10">
                 <h1 className="font-bold font-sans text-xl">{projectName}</h1>
