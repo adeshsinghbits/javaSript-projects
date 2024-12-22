@@ -1,6 +1,7 @@
-import projecImage from "../assets/Project.jpg"
+// import projecImage from "../assets/Project.jpg"
 
-function Card({ projectName, altname }) {
+
+function Card({ projectName, altname, projecImage }) {
     return (
         <div className="m-3">
             <div className="w-64 h-64 rounded-xl">
