@@ -11,7 +11,7 @@ import { datafromgithub } from '../data/Data.github.js';
   const Projects = () => {
     return (
     <div>
-          <div className="flex pb-5 bg-black flex-wrap justify-between">
+          <div className="flex pb-5 bg-black flex-wrap justify-center">
               {names.map((name) => (
                       <div key={name}>
                         <Card

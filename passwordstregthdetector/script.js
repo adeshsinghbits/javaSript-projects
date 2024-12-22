@@ -15,7 +15,7 @@ pass.addEventListener("input", (event) => {
     // console.log(blur);
 
     barLength =  9*length
-    console.log(barLength);
+    //console.log(barLength);
     
     bar.style.width = `${barLength}%`
 
