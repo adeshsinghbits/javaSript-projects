@@ -30,7 +30,6 @@ function App() {
         <RouterProvider router={router}>
                 <Header/>
                 {/* Define Routes Here */}
-                <div>adesh</div>
         </RouterProvider>
     );
 }

@@ -28,3 +28,11 @@ pass.addEventListener("input", (event) => {
     }
     
 })
+//show password
+let showpass = document.getElementById("showpass")
+
+showpass.addEventListener("click", (event) => {
+    console.log(event);
+    
+    
+})

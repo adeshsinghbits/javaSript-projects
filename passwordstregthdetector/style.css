@@ -43,6 +43,12 @@ form{
     height: 30px;
     margin: 20px 0px 0px;
 }
+#showpass{
+    display: inline-block;
+    margin-top: 10px;
+    height: 20px;
+    width: 20px;
+}
 .bar{
     max-width: 100%;
     width: 0px;
